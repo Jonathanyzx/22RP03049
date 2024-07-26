@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Add_item</servlet-name>
+        <servlet-class>Add_item</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>view_cart</servlet-name>
+        <servlet-class>view_cart</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Remove_cart</servlet-name>
+        <servlet-class>Remove_cart</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>clear_cart</servlet-name>
+        <servlet-class>clear_cart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Add_item</servlet-name>
+        <url-pattern>/Add_item</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>view_cart</servlet-name>
+        <url-pattern>/view_cart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Remove_cart</servlet-name>
+        <url-pattern>/Remove_cart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>clear_cart</servlet-name>
+        <url-pattern>/clear_cart</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
